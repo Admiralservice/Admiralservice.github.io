@@ -1,14 +1,54 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+<div class="content-wrapper clear-self">
+    <aside role="complementary" class="sidebar left">
+        <nav class="menu-left-wrap">
+            <ul class="menu-left">
+                <li><a href="catalog.html">Услуги</a></li>
+                <li><a href="diagnostika-avtomobilya.html">Диагностика автомобиля</a></li>
+                <li><a href="tehnicheskoe-obsluzhivanie.html">Техническое обслуживание</a></li>
+                <li><a href="kuzovnoy-remont.html">Кузовной ремонт</a></li>
+                <li><a href="shinomontazh-avtomobilya.html">Шиномонтаж автомобиля</a></li>
+                <li><a href="evakuaciya-transportnyh-sredstv.html">Эвакуация транспортных средств</a></li>
+                <li><a href="tonirovanie-stekol.html">Тонирование стекол</a></li>
+                <li><a href="diski-i-shiny.html">Диски и шины</a></li>
+                <li><a href="zapchasti-dlya-avto.html">Запчасти для авто</a></li>
+                <li><a href="instrumenty.html">Инструменты</a></li>
+                <li><a href="search.html">Поиск по сайту</a></li>
+                <li><a href="nemnogo-o-nas.html">Немного о нас</a></li>
+                <li><a href="aktsiya.html">Акция</a></li>
 
+
+                <li><a href="kuzovnoy-remont.html-1">Кузовной ремонт</a></li>
+
+
+                <li><a href="registraciya.html">Регистрация</a></li>
+                <li><a href="bazovye-stili.html">Базовые стили</a></li>
+                <li><a href="map.html">Карта сайта</a></li>
+            </ul>
+        </nav>
+        <div class="site-informers"><span style="display: block; padding: 5px 10px; border: 1px solid #a7a7a7;"> <span
+                style="font-size: 16px; color: #3c3c3c;">Информеры</span><br>Блок для размещения информеров</span>
+        </div>
+    </aside>
+    <!-- .sidebar-left -->
+    <main role="main" class="main">
+        <div class="content">
+            <div class="content-inner">
+                <div class="site-path"><a href="index.html">Главная</a> / {{ page.title }}</div>
+                <h1>{{ page.title }}</h1>
+                	{{ content }}
+
+            </div>
+            <!-- .content-inner -->
+        </div>
+        <!-- .content -->
+    </main>
+    <!-- .main -->
 </div>
+
+{% include akcii.html %}
+{% include reviews.html %}
