@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**
+ * BxSlider v4.0 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2012
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-slider-wrap {
+	position: relative;
+	padding: 0;
+	margin:0 auto;
+	width: 950px;
+	height: 373px;
+}
+
+.bx-slider {
+	position: relative;
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	border-radius:10px;
+  	-moz-border-radius:10px;
+  	-webkit-border-radius:10px;
+  	-khtml-border-radius:10px;
+  	behavior:url(/g/pie/pie.htc);
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+
+.bx-wrapper .bx-viewport {
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: 20px;
+	right:19px;		
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(../bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background:url(../slider_bulets.png) left top no-repeat;
+	text-indent: -9999px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 0 2px;
+	outline: 0;	
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background:url(../slider_bulets.png) -23px top no-repeat;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-slider-wrap .controls-wrap a{
+	position: absolute;
+	top: 50%;
+	display: block;	
+	font-size: 0;
+	line-height: 0;
+	margin-top: -26px;
+	outline: 0;	
+	text-indent: -9999px;
+	z-index: 99;	
+}
+
+.bx-prev a { display: block; width: 53px; height: 53px; left: -20px; background: url(../slider-arrows.png) no-repeat 0 0;}
+.bx-next a { display: block; width: 53px; height: 53px; right: -20px; background: url(../slider-arrows.png) no-repeat -78px 0;}
+.bx-prev a:hover { background-position: 0 -64px;}
+.bx-next a:hover { background-position: -78px -64px;}
+
+
+.bx-wrapper .bx-controls-direction a.disabled {	display: none;}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 15px;
+	height: 20px;
+	outline: 0;
+	background: url(../slider_bulets.png) -15px -26px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -15px -26px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 19px;
+	outline: 0;
+	background: url(../slider_bulets.png) 0 -27px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: 0 -27px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;	
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 43px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+

@@ -1,12 +1,51 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="ru"><head>
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<title>Главная - Автосервисы, ремонт транспортных средств</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+<link rel="stylesheet" href="{{ "/css/styles_articles_tpl.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/css/styles.scss.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/css/designblock.scss.css" | prepend: site.baseurl }}">
+<link rel="stylesheet" href="{{ "/css/s3_styles.scss.css" | prepend: site.baseurl }}">
+
+<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/includeform.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.megapopup.form.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="{{ "/js/jquery.ui.datepicker.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.ui.core.min.js | prepend: site.baseurl }}""></script>
+<script src="{{ "/js/jquery.ui.datepicker-ru.js" | prepend: site.baseurl }}"></script>
+
+<link rel="stylesheet" type="text/css" href="{{ "/css/highslide.min.css" | prepend: site.baseurl }}">
+
+<script type="text/javascript" src="{{ "/js/highslide-full.packed.js" | prepend: site.baseurl }}"></script>
+
+<script type="text/javascript">
+hs.graphicsDir = '';
+hs.outlineType = null;
+hs.showCredits = false;
+hs.lang={cssDirection:'ltr',loadingText:'Загрузка...',loadingTitle:'Кликните чтобы отменить',focusTitle:'Нажмите чтобы перенести вперёд',fullExpandTitle:'Увеличить',fullExpandText:'Полноэкранный',previousText:'Предыдущий',previousTitle:'Назад (стрелка влево)',nextText:'Далее',nextTitle:'Далее (стрелка вправо)',moveTitle:'Передвинуть',moveText:'Передвинуть',closeText:'Закрыть',closeTitle:'Закрыть (Esc)',resizeTitle:'Восстановить размер',playText:'Слайд-шоу',playTitle:'Слайд-шоу (пробел)',pauseText:'Пауза',pauseTitle:'Приостановить слайд-шоу (пробел)',number:'Изображение %1/%2',restoreTitle:'Нажмите чтобы посмотреть картинку, используйте мышь для перетаскивания. Используйте клавиши вперёд и назад'};</script>
+
+<script type="text/javascript" src="{{ "/js/flowplayer-3.2.9.min.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet" type="text/css" href="./index_files/calendar.css">
+<script type="text/javascript" src="{{ "/js/ru.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/cookie.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/widgets.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/calendar.packed.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/js/feedback.factory.min.js" | prepend: site.baseurl }}"></script>
+
+
+<script src="{{ "/js/jquery.bxslider.min.js" | prepend: site.baseurl }}"></script>
+<link rel="stylesheet" href="{{ "/css/bx_slider_styles.css" | prepend: site.baseurl }}">
+<script src="{{ "/js/main.js" | prepend: site.baseurl }}" charset="utf-8"></script>
+
+<style type="text/css">.highslide img {cursor: url(zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}</style>
+
+
 </head>

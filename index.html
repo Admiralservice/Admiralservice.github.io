@@ -1,23 +1,18 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="main_bl">
+    <div class="main_bl_title">Немного о нас</div>
+    <div class="main_bl_text">
+        <p style="text-align: justify;">Команда профессионалов за время своей деятельности
+        накопила бесценный опыт и знания о потребностях клиентов. Оперативность, качество и разумные цены - то,
+        что наша компания предлагает Вам! Для каждого заказчика мы ищем новые решения, которые успешно
+        воплощаются в жизнь.<br><br>Нам доверяют, и поэтому число постоянных клиентов постоянно увеличивается.
+        Клиенты выбирают нашу компанию за точность выполнения поставленных задач, профессионализм и постоянное
+        совершенствование. Опытные сотрудники всегда в курсе инноваций - мы улучшаем технологические процессы и
+        разрабатываем индивидуальный подход к каждому партнеру.</p>
+    </div>
+    
+    <a href="nemnogo-o-nas.html" class="main_bl_more">Подробнее</a>
 </div>

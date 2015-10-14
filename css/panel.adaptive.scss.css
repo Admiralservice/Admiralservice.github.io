@@ -1,0 +1,165 @@
+.s3-solution-panel {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  background: #ffe877;
+  z-index: 9999999;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6); }
+  .s3-solution-panel * {
+    font-size: 0;
+    line-height: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.s3-solution-wrapper {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto; }
+
+.s3-solution-box {
+  display: inline-block; }
+
+.s3-solution-price {
+  margin-left: 20px;
+  padding-right: 27px;
+  color: #666;
+  font-size: 20px;
+  line-height: 60px; }
+  .s3-solution-price strong {
+    font-size: 22px;
+    line-height: 60px;
+    color: #212121; }
+
+.s3-solution-a {
+  color: #212121;
+  font-size: 15px;
+  line-height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: underline; }
+  .s3-solution-a:hover {
+    text-decoration: none; }
+
+.s3-solution-button {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 40px;
+  display: inline-block;
+  height: 40px;
+  margin: 0 20px 0 0;
+  padding: 0 12px;
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.1); }
+  .s3-solution-button:hover {
+    text-decoration: none; }
+
+.s3-solution-button-green {
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  background-color: #5cab32;
+  background-image: -moz-linear-gradient(top, #68b43c 0%, #51a328 100%);
+  background-image: -webkit-gradient(linear, 0 0, 0% 100%, from(#68b43c), to(#51a328));
+  background-image: -webkit-linear-gradient(top, #68b43c, #51a328);
+  background-image: -o-linear-gradient(top, #68b43c, #51a328);
+  background-image: linear-gradient(to bottom, #68b43c 0%, #51a328 100%);
+  background-repeat: repeat-x; }
+
+.s3-solution-arrow {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  display: block;
+  width: 28px; }
+  .s3-solution-arrow img {
+    width: 100%; }
+
+.s3-solution-tail {
+  position: absolute;
+  top: -57px;
+  right: 0;
+  display: none;
+  width: 68px;
+  height: 57px;
+  padding: 20px;
+  background: #ffe877;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6); }
+  .s3-solution-tail::before {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    display: block;
+    width: 68px;
+    height: 5px;
+    content: '';
+    background: #ffe877; }
+  .s3-solution-tail img {
+    width: 100%; }
+
+.s3-solution-transition, .s3-solution-transition .s3-solution-button, .s3-solution-transition .s3-solution-price, .s3-solution-transition .s3-solution-price strong, .s3-solution-transition .s3-solution-arrow, .s3-solution-transition .s3-solution-call-me {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+@media (max-width: 1024px) {
+  .s3-solution-a {
+    display: none; } }
+@media screen and (max-width: 800px) {
+  .s3-solution-arrow {
+    top: 14px;
+    width: 21px; }
+
+  .s3-solution-tail {
+    top: -43px;
+    right: 5px;
+    width: 51px;
+    height: 43px;
+    padding: 15px; } }
+@media screen and (orientation: landscape) and (max-width: 800px) {
+  .s3-solution-panel {
+    height: 40px; }
+
+  .s3-solution-price {
+    margin-left: 10px;
+    padding-right: 10px; }
+    .s3-solution-price, .s3-solution-price strong {
+      font-size: 14px;
+      line-height: 40px; }
+
+  .s3-solution-button {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 14px; } }
+@media screen and (orientation: portrait) and (max-width: 800px) {
+  .s3-solution-panel {
+    height: 90px; }
+
+  .s3-solution-box {
+    display: block;
+    margin-left: 14px; }
+
+  .s3-solution-price, .s3-solution-price strong {
+    font-size: 18px;
+    line-height: 40px; }
+
+  .s3-solution-button {
+    font-size: 15px;
+    line-height: 36px;
+    height: 36px;
+    padding: 0 14px; } }
