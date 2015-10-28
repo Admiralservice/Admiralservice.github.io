@@ -466,12 +466,12 @@ a img {
     -o-border-radius : 16px;
     border-radius : 16px;
     background-color: #f89f1f;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #c54653), color-stop(100%, #c54653));
-    background-image: -o-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-    background-image: -moz-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-    background-image: -webkit-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-    background-image: -ms-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-    background-image: linear-gradient(to top, #c54653 0%, #c54653 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #ef7f1a), color-stop(100%, #ef7f1a));
+    background-image: -o-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+    background-image: -moz-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+    background-image: -webkit-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+    background-image: -ms-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+    background-image: linear-gradient(to top, #ef7f1a 0%, #ef7f1a 100%);
     height: 32px;
     line-height: 30px;
     padding: 0 16px 0 42px;
@@ -497,12 +497,12 @@ a img {
       background-image: linear-gradient(to top, #ee5665 0%, #ee5665 100%); }
     .header .call-but:active {
       background-color: #f89f1f;
-      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #c54653), color-stop(100%, #c54653));
-      background-image: -o-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-      background-image: -moz-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-      background-image: -webkit-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-      background-image: -ms-linear-gradient(bottom, #c54653 0%, #c54653 100%);
-      background-image: linear-gradient(to top, #c54653 0%, #c54653 100%);
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #ef7f1a), color-stop(100%, #ef7f1a));
+      background-image: -o-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+      background-image: -moz-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+      background-image: -webkit-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+      background-image: -ms-linear-gradient(bottom, #ef7f1a 0%, #ef7f1a 100%);
+      background-image: linear-gradient(to top, #ef7f1a 0%, #ef7f1a 100%);
       -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .49);
       -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .49);
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, .49); }
@@ -547,7 +547,7 @@ a img {
           -ms-border-radius : 3px;
           -o-border-radius : 3px;
           border-radius : 3px;
-          background-color: #c54653;
+          background-color: #ef7f1a;
           opacity: 0;
           -webkit-transition: all 0.5s;
           -moz-transition: all 0.5s;
@@ -556,11 +556,11 @@ a img {
           transition: all 0.5s;
           margin-top: -3px; }
         .menu-top-wrap .menu-top li a:hover {
-          color: #c54653; }
+          color: #ef7f1a; }
           .menu-top-wrap .menu-top li a:hover:before {
             opacity: 1; }
       .menu-top-wrap .menu-top li.active a {
-        color: #c54653;
+        color: #ef7f1a;
         cursor: default; }
         .menu-top-wrap .menu-top li.active a:before {
           opacity: 1; }
@@ -576,7 +576,7 @@ a img {
     right: -5000px;
     bottom: 0;
     left: -5000px;
-    background: #1f7794 url(../head_line.png) 50% 0 no-repeat; }
+    background: #ef7f1a ; }
   .head_line:after {
     content: '';
     position: absolute;
@@ -584,7 +584,8 @@ a img {
     right: -104px;
     width: 824px;
     height: 422px;
-    background: url(../img/head_line_aft.png) 0 0 no-repeat; }
+    background: url(../img/head_line_aft.png) right no-repeat;
+    background-size: 75%; }
   .head_line .head_linte_text {
     position: absolute;
     top: 87px;
@@ -604,7 +605,7 @@ a img {
 .head_line_vnut {
   height: 126px; }
   .head_line_vnut:before {
-    background: #1f7794 url(../head_line_vnut.png) 50% 0 no-repeat; }
+    background: #ef7f1a url(../head_line_vnut.png) 50% 0 no-repeat; }
   .head_line_vnut:after {
     display: none; }
   .head_line_vnut .head_linte_text {
@@ -704,7 +705,7 @@ a img {
         bottom: 0;
         left: 0; }
     .jblock .jblock_div.last_bl {
-      background: #c54653;
+      background: #ef7f1a;
       font-family: 'exo_2-r', Arial, Helvetica, sans-serif;
       font-size: 14px;
       color: #fffefe;
@@ -718,7 +719,7 @@ a img {
         margin-top: -1px; }
       .jblock .jblock_div.last_bl .top-but {
         margin-top: 29px;
-        color: #c54653;
+        color: #ef7f1a;
         text-decoration: none;
         display: inline-block;
         vertical-align: top;
@@ -873,7 +874,7 @@ a img {
         -ms-border-radius : 17px;
         -o-border-radius : 17px;
         border-radius : 17px;
-        background-color: #1f7794;
+        background-color: #ef7f1a;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -o-transition: all 0.5s;
@@ -918,7 +919,7 @@ a img {
   margin-right: 260px; }
 
 .bblock {
-  background-color: #1f7794;
+  background-color: #ef7f1a;
   padding-right: 500px;
   margin: 58px 20px 0;
   min-height: 194px;
@@ -997,7 +998,7 @@ a img {
     .otz_block .otz_block_in .otz_block_div .otz_block_title {
       font-family: 'exo_2-s-b', Arial, Helvetica, sans-serif;
       font-size: 16px;
-      color: #1f7794; }
+      color: #ef7f1a; }
     .otz_block .otz_block_in .otz_block_div .otz_block_text {
       font-family: 'exo_2-i', Arial, Helvetica, sans-serif;
       font-size: 13px;
