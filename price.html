@@ -15,50 +15,24 @@ title: Прайс-лист
 
 <div class="mg-tab mg-tb10">
     <div class="title">
-        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Диагностические
-            работы</strong></span></p>
+        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Диагностические работы</strong></span></p>
     </div>
     <div class="body">
         <table border="0" class="mg-tabs4" style="width: 100%;">
-            <tbody>
+            <tr> 
+                <td align="center" style="text-align: center;"><strong>Наименование услуги</strong></td>
+                <td align="center" style="text-align: center;"><strong>ед.</strong></td>
+                <td align="center" style="text-align: center;"><strong>мин(руб)</strong></td>
+                <td align="center" style="text-align: center;"><strong>макс(руб)</strong></td>
+            </tr> 
+            {% for price in site.data.price_oil %}
             <tr>
-                <td align="center" style="text-align: center;"><strong>Вид услуги</strong></td>
-                <td align="center" style="text-align: center;"><strong>Отечественные
-                    автомобили</strong></td>
-                <td align="center" style="text-align: center;"><strong>Импортные
-                    автомобили</strong></td>
+                <td align="center" style="text-align: center;">{{ price.name }}</td>
+                <td align="center" style="text-align: center;">{{ price.ie }}</td>
+                <td align="center" style="text-align: center;">{{ price.min }}</td>
+                <td align="center" style="text-align: center;">{{ price.max }}</td>
             </tr>
-            <tr>
-                <td>Диагностика инжектора(компьютерная)</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Диагностика карбюратора</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Диагностика системы кондиционирования</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Чистка форсунок</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Чистка карбюратора</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Заправка кондиционера</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            </tbody>
+            {% endfor %} 
         </table>
     </div>
 </div>

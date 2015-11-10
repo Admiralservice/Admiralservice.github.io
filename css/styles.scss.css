@@ -1026,7 +1026,7 @@ a img {
   .otz_block .bx-controls-direction {
     font-size: 0;
     position: absolute;
-    top: 6px;
+    top: -28px;
     left: 312px; }
     .otz_block .bx-controls-direction a {
       display: inline-block;
@@ -1080,14 +1080,14 @@ a img {
       font-family: 'exo_2-b', Arial, Helvetica, sans-serif;
       font-size: 16px;
       position: relative; }
-    .footer .footer-in .bot-tel:before {
+    /*.footer .footer-in .bot-tel:before {
       content: '';
       position: absolute;
       top: -7px;
       bottom: -23px;
       left: 0;
       width: 1px;
-      background: #c6c2bc; }
+      background: #c6c2bc; }*/
     .footer .footer-in .bot-tel .tel-bot-title {
       font-family: 'roboto-r', Arial, Helvetica, sans-serif;
       font-size: 12px;
