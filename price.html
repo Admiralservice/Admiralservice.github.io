@@ -15,7 +15,7 @@ title: Прайс-лист
 
 <div class="mg-tab mg-tb10">
     <div class="title">
-        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Диагностические работы</strong></span></p>
+        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Замена технических жидкостей и фильтров</strong></span></p>
     </div>
     <div class="body">
         <table border="0" class="mg-tabs4" style="width: 100%;">
@@ -38,140 +38,97 @@ title: Прайс-лист
 </div>
 <div class="mg-tab mg-tb10">
     <div class="title">
-        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Регулировочные
-            работы</strong></span></p>
+        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Ремонт ходовой части</strong></span></p>
     </div>
     <div class="body">
         <table border="0" class="mg-tabs4" style="width: 100%;">
-            <tbody>
+            <tr> 
+                <td align="center" style="text-align: center;"><strong>Наименование услуги</strong></td>
+                <td align="center" style="text-align: center;"><strong>ед.</strong></td>
+                <td align="center" style="text-align: center;"><strong>мин(руб)</strong></td>
+                <td align="center" style="text-align: center;"><strong>макс(руб)</strong></td>
+            </tr> 
+            {% for price in site.data.price_base %}
             <tr>
-                <td style="text-align: center;"><strong>Вид услуги</strong></td>
-                <td style="text-align: center;"><strong>Отечественные автомобили</strong></td>
-                <td style="text-align: center;"><strong>Импортные
-                    абили</strong><strong>втомо</strong></td>
+                <td align="center" style="text-align: center;">{{ price.name }}</td>
+                <td align="center" style="text-align: center;">{{ price.ie }}</td>
+                <td align="center" style="text-align: center;">{{ price.min }}</td>
+                <td align="center" style="text-align: center;">{{ price.max }}</td>
             </tr>
-            <tr>
-                <td>Развал-схождение (компьютерный стенд)</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Регулировка клапанов&nbsp;</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>3. Ремонтные работы</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена шаровой опоры</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена передней амортизаторной стойки</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена ступичного подшипника</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена передних тормозных колодок</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена задних тормозных колодок</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена ремня ГРМ</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            </tbody>
+            {% endfor %} 
         </table>
     </div>
 </div>
 <div class="mg-tab mg-tb10">
     <div class="title">
-        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Шиномонтажные
-            работы</strong></span></p>
+        <p style="text-align: center;"><span style="font-size: 12pt;"><strong> Ремонт тормозной системы</strong></span></p>
     </div>
     <div class="body">
         <table border="0" class="mg-tabs4" style="width: 100%;">
-            <tbody>
+            <tr> 
+                <td align="center" style="text-align: center;"><strong>Наименование услуги</strong></td>
+                <td align="center" style="text-align: center;"><strong>ед.</strong></td>
+                <td align="center" style="text-align: center;"><strong>мин(руб)</strong></td>
+                <td align="center" style="text-align: center;"><strong>макс(руб)</strong></td>
+            </tr> 
+            {% for price in site.data.price_breaks %}
             <tr>
-                <td style="text-align: center;"><strong>Вид услуги</strong></td>
-                <td style="text-align: center;"><strong>Отечественные автомобили</strong></td>
-                <td style="text-align: center;"><strong>Импортные автомобили</strong></td>
+                <td align="center" style="text-align: center;">{{ price.name }}</td>
+                <td align="center" style="text-align: center;">{{ price.ie }}</td>
+                <td align="center" style="text-align: center;">{{ price.min }}</td>
+                <td align="center" style="text-align: center;">{{ price.max }}</td>
             </tr>
-            <tr>
-                <td>Разбортовка/забортовка колеса R13-R20</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Балансировка колеса R13-R20</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Ремонт колеса (боковой порез)</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Ремонт камеры</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            </tbody>
+            {% endfor %} 
         </table>
     </div>
 </div>
 <div class="mg-tab mg-tb10">
     <div class="title">
-        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Электротехнические
-            работы</strong></span></p>
+        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Ремонт ДВС</strong></span></p>
     </div>
     <div class="body">
         <table border="0" class="mg-tabs4" style="width: 100%;">
-            <tbody>
+            <tr> 
+                <td align="center" style="text-align: center;"><strong>Наименование услуги</strong></td>
+                <td align="center" style="text-align: center;"><strong>ед.</strong></td>
+                <td align="center" style="text-align: center;"><strong>мин(руб)</strong></td>
+                <td align="center" style="text-align: center;"><strong>макс(руб)</strong></td>
+            </tr> 
+            {% for price in site.data.price_engine %}
             <tr>
-                <td style="text-align: center;"><strong>Вид услуги</strong></td>
-                <td style="text-align: center;"><strong>Отечественные автомобили</strong></td>
-                <td style="text-align: center;"><strong>Импортные автомобили</strong></td>
+                <td align="center" style="text-align: center;">{{ price.name }}</td>
+                <td align="center" style="text-align: center;">{{ price.ie }}</td>
+                <td align="center" style="text-align: center;">{{ price.min }}</td>
+                <td align="center" style="text-align: center;">{{ price.max }}</td>
             </tr>
-            <tr>
-                <td>Замена лампы фары</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Замена лампы заднего габарита</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            <tr>
-                <td>Ремонт генератора</td>
-                <td style="text-align: center;">0.00 руб.</td>
-                <td style="text-align: center;">0.00 руб.</td>
-            </tr>
-            </tbody>
+            {% endfor %} 
         </table>
     </div>
 </div>
+<div class="mg-tab mg-tb10">
+    <div class="title">
+        <p style="text-align: center;"><span style="font-size: 12pt;"><strong>Ремонт рулевого управления</strong></span></p>
+    </div>
+    <div class="body">
+        <table border="0" class="mg-tabs4" style="width: 100%;">
+            <tr> 
+                <td align="center" style="text-align: center;"><strong>Наименование услуги</strong></td>
+                <td align="center" style="text-align: center;"><strong>ед.</strong></td>
+                <td align="center" style="text-align: center;"><strong>мин(руб)</strong></td>
+                <td align="center" style="text-align: center;"><strong>макс(руб)</strong></td>
+            </tr> 
+            {% for price in site.data.price_control %}
+            <tr>
+                <td align="center" style="text-align: center;">{{ price.name }}</td>
+                <td align="center" style="text-align: center;">{{ price.ie }}</td>
+                <td align="center" style="text-align: center;">{{ price.min }}</td>
+                <td align="center" style="text-align: center;">{{ price.max }}</td>
+            </tr>
+            {% endfor %} 
+        </table>
+    </div>
+</div>
+
 <p style="text-align: right;"><a href="forma.html" class="mg-but mg-but5">Онлайн-заявка</a></p>
 
 <p>&nbsp;</p>
-
-<p align="right"><em>Внимание! Текст этой страницы шаблонный, его необходимо заменить на<br>Ваш
-                            собственный уникальный текст, чтобы сайт находился в поисковых системах!</em></p>
-
