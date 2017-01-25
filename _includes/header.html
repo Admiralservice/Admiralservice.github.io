@@ -7,26 +7,14 @@
     </div>
     <div class="top-tel">
         <div class="top-tel-title">Контакты:</div>
-        +7 423 2085010: +7 984 1985010
+        +7 423 2085010 , +7 984 1985010
     </div>
-    <a href="price.html" class="call-but">Скачать прайс</a>
+    <a href="price.html" class="call-but">Цены</a>
 </header>
 <nav class="menu-top-wrap">
-    <ul class="menu-top" style="display: none;">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="price.html">Прайс-лист</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-        <!-- <li><a href="doska.html">Доска</a></li> -->
-        <li><a href="forma.html">Онлайн-заявка</a></li>
-        <li><a href="sposoby-oplaty.html">Способы оплаты</a></li>
-        <li><a href="otzyvy.html">Отзывы о нас</a></li>
-    </ul>
     <ul class="menu-top">
-
         {% assign pages_list = site.pages | sort:"menusort" %}
         {% assign group = 'topmenu' %}
-        {% include pages_list %}
-
+        {% include pages_list.html %}
     </ul>
 </nav>
