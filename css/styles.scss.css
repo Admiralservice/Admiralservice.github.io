@@ -561,11 +561,12 @@ a img {
     content: '';
     position: absolute;
     top: 50%;
-    left: -41px;
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    background: url(../img/tel_top.png) 0 0 no-repeat;
+    left: -59px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background: url(../img/phone.png) 0 0 no-repeat;
+    background-size: 40px;
 }
 
 .header .top-tel .top-tel-title {

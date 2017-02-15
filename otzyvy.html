@@ -11,7 +11,6 @@ title: Отзывы
 
 
     <article>
-
         <div class="s3_comments">
             <dl class="s3_comments_item" itemscope="" itemtype="http://schema.org/Offer" id="post_155239078">
                 <dt class="s3_comment_head">
@@ -104,40 +103,65 @@ title: Отзывы
     <div class="s3_tpl_pagelist"></div>
     <div>
         <h2>Оставить сообщение</h2>
-        <form class="s3_form" action="./otzyvy_files/otzyvy.html" method="post">
+        <form class="s3_form" action="http://formspree.io/{{ site.email }}" method="post">
 
+            <input type="hidden" name="_next" value="{{ site.url }}/thanks_reviews.html" />
+            <input type="hidden" name="_subject" value="Отзыв с сайта service-admiral.ru!" />
+            <input type="hidden" name="_cc" value="oke11o@yandex.ru" />
 
             <div class="s3_form_item s3_form_item_type_text s3_form_item_alias_post_name s3_form_item_required">
-                <div class="s3_form_field_title"><label for="s3_board_field_post_name">Имя: <span
-                        class="s3_required">*</span></label></div>
+                <div class="s3_form_field_title">
+                    <label for="s3_board_field_post_name">Имя: <span class="s3_required">*</span></label>
+                </div>
                 <div class="s3_form_field_content">
                     <input type="text"
                            class="s3_form_field s3_form_field_type_text s3_form_field_alias_post_name s3_form_field_required"
-                           id="s3_board_field_post_name" name="post_name" maxlength="100" size="32" value=""
+                           id="s3_board_field_post_name"
+                           name="name"
+                           maxlength="100"
+                           size="32"
+                           value=""
+                           required
                            style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
                 </div>
             </div>
             <div class="s3_form_item s3_form_item_type_text s3_form_item_alias_post_phone">
-                <div class="s3_form_field_title"><label for="s3_board_field_post_phone">Телефон:</label></div>
+                <div class="s3_form_field_title">
+                    <label for="s3_board_field_post_phone">Телефон:</label>
+                </div>
                 <div class="s3_form_field_content">
-                    <input type="text" class="s3_form_field s3_form_field_type_text s3_form_field_alias_post_phone"
-                           id="s3_board_field_post_phone" name="post_phone" maxlength="100" size="32" value="">
+                    <input type="text"
+                           class="s3_form_field s3_form_field_type_text s3_form_field_alias_post_phone"
+                           id="s3_board_field_post_phone"
+                           name="phone"
+                           maxlength="100"
+                           size="32"
+                           value="">
                 </div>
             </div>
             <div class="s3_form_item s3_form_item_type_text s3_form_item_alias_post_mail">
-                <div class="s3_form_field_title"><label for="s3_board_field_post_mail">E-mail:</label></div>
+                <div class="s3_form_field_title">
+                    <label for="s3_board_field_post_mail">E-mail:</label>
+                </div>
                 <div class="s3_form_field_content">
-                    <input type="text" class="s3_form_field s3_form_field_type_text s3_form_field_alias_post_mail"
-                           id="s3_board_field_post_mail" name="post_mail" maxlength="100" size="32" value="">
+                    <input type="text"
+                           class="s3_form_field s3_form_field_type_text s3_form_field_alias_post_mail"
+                           id="s3_board_field_post_mail"
+                           name="email"
+                           maxlength="100"
+                           size="32" value="">
                 </div>
             </div>
             <div class="s3_form_item s3_form_item_type_textarea s3_form_item_alias_post_body s3_form_item_required">
-                <div class="s3_form_field_title"><label for="s3_board_field_post_body">Текст: <span class="s3_required">*</span></label>
+                <div class="s3_form_field_title">
+                    <label for="s3_board_field_post_body">
+                        Текст: <span class="s3_required">*</span>
+                    </label>
                 </div>
                 <div class="s3_form_field_content">
                     <textarea
                             class="s3_form_field s3_form_field_type_textarea s3_form_field_alias_post_body s3_form_field_required"
-                            id="s3_board_field_post_body" name="post_body" rows="5" cols="60"></textarea>
+                            id="s3_board_field_post_body" name="message" rows="5" cols="60" required></textarea>
                 </div>
             </div>
 

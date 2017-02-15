@@ -1,34 +1,48 @@
 ---
 layout: page
-group: none
+group: topmenu
 menusort: 5
 
 title: Онлайн-заявка
 ---
 
 
-<!--includeForm-->
-
 <div class="s3_tpl_anketa -visor-no-click">
     <div class="s3_message">Обязательные для заполнения поля помечены знаком <span class="s3_required">*</span>.</div>
-    <form method="post" class="s3_form">
+    <form action="http://formspree.io/{{ site.email }}" method="post" class="s3_form">
+        <input type="hidden" name="_next" value="{{ site.url }}/thanks_form.html" />
+        <input type="hidden" name="_subject" value="Заявка с сайта service-admiral.ru!" />
+        <input type="hidden" name="_cc" value="oke11o@yandex.ru" />
         <div class="s3_form_item s3_form_item_type_text">
-            <div class="s3_form_field_title"><label for="d[0]">Ф.И.О: </label></div>
-            <div class="s3_form_field_content"><input type="text" size="30" maxlength="100" value="" name="d[0]"
-                                                      id="d[0]" class="s3_form_field s3_form_field_type_text"></div>
+            <div class="s3_form_field_title">
+                <label for="FIO">Ф.И.О: </label>
+            </div>
+            <div class="s3_form_field_content">
+                <input type="text" size="30" maxlength="100" value="" name="FIO" id="FIO" class="s3_form_field s3_form_field_type_text">
+            </div>
         </div>
         <div class="s3_form_item s3_form_item_type_text s3_form_item_required">
-            <div class="s3_form_field_title"><label for="d[2]">Телефон или E-Mail: <span
-                    class="s3_required">*</span></label></div>
-            <div class="s3_form_field_content"><input type="text" size="30" maxlength="100" value="" name="d[2]"
-                                                      id="d[2]"
-                                                      class="s3_form_field s3_form_field_type_text s3_form_field_required">
+            <div class="s3_form_field_title">
+                <label for="contact">Телефон или E-Mail: <span class="s3_required">*</span></label>
+            </div>
+            <div class="s3_form_field_content">
+                <input type="text"
+                        size="30"
+                        maxlength="100"
+                        value=""
+                        name="email"
+                        id="contact"
+                        required
+                        class="s3_form_field s3_form_field_type_text s3_form_field_required">
             </div>
         </div>
         <div class="s3_form_item s3_form_item_type_textarea">
-            <div class="s3_form_field_title"><label for="d[3]">Заявка: </label></div>
+            <div class="s3_form_field_title">
+                <label for="message">Заявка: </label>
+            </div>
             <div class="s3_form_field_content">
-                <textarea cols="50" rows="4" name="d[3]" id="d[3]" class="s3_form_field s3_form_field_type_textarea"></textarea>
+                <textarea cols="50" rows="4" name="message" id="message"
+                          class="s3_form_field s3_form_field_type_textarea" required></textarea>
             </div>
         </div>
         <div class="s3_form_item s3_form_item_button">
@@ -36,4 +50,3 @@ title: Онлайн-заявка
         </div>
     </form>
 </div>
-<!--includeForm-->
