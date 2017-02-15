@@ -768,7 +768,7 @@ a img {
 }
 
 .head_line_vnut:before {
-    background: #ef7f1a url(../head_line_vnut.png) 50% 0 no-repeat;
+    /*background: #ef7f1a url(../head_line_vnut.png) 50% 0 no-repeat;*/
 }
 
 .head_line_vnut:after {
@@ -838,7 +838,6 @@ a img {
     right: 0;
     bottom: 0;
     left: 0;
-    font-family:;
     font-size: 19px;
     color: #fff;
     z-index: 1;
@@ -1452,7 +1451,6 @@ a img {
     position: absolute;
     top: -8px;
     right: -8px;
-    background: url(../img/icon-close.png) 0 0 no-repeat;
     width: 30px;
     height: 30px;
     cursor: pointer;
